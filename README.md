@@ -136,7 +136,10 @@ chown $(id -u):$(id -g) $HOME/.kube/config<br />
 **Installing Pod Network using Calico network**
 
 
-curl https://docs.projectcalico.org/manifests/calico.yaml -O<br />
+curl https://docs.projectcalico.org/manifests/calico.yaml -O<br /> 
+or
+wget https://docs.projectcalico.org/manifests/calico.yaml
+
 kubectl apply -f calico.yaml<br />
 kubectl get pods -n kube-system<br />
 
